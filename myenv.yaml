@@ -1,0 +1,22 @@
+name: myenv
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - matplotlib
+  - opencv
+  - pillow
+  - scipy
+  - ipython
+  - jupyterlab
+
+  # Optional but useful for notebooks
+  - ipykernel
+
+  # Pip section (kept minimal)
+  - pip
+  - pip:
+      - imageio
