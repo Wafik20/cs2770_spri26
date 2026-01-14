@@ -1,0 +1,4 @@
+# Update from remote repo
+git fetch upstream
+git pull --rebase upstream main
+git push origin main
