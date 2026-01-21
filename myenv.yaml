@@ -1,7 +1,6 @@
 name: myenv
 channels:
   - conda-forge
-  - defaults
 
 dependencies:
   - python=3.10
@@ -13,10 +12,11 @@ dependencies:
   - ipython
   - jupyterlab
 
-  # Optional but useful for notebooks
-  - ipykernel
+  # PyTorch stack (must be together)
+  - pytorch
+  - torchvision
 
-  # Pip section (kept minimal)
+  - ipykernel
   - pip
   - pip:
       - imageio
