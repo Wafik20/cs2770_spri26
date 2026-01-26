@@ -1,21 +1,19 @@
 name: myenv
 channels:
+  - pytorch
+  - nvidia
   - conda-forge
 
 dependencies:
   - python=3.10
   - numpy
   - matplotlib
-  - opencv
-  - pillow
   - scipy
   - ipython
   - jupyterlab
-
-  # PyTorch stack (must be together)
   - pytorch
   - torchvision
-
+  - pytorch-cuda=12.1
   - ipykernel
   - pip
   - pip:
